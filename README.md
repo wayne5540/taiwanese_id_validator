@@ -29,13 +29,32 @@ Or install it yourself as:
 
 ### Rails Model Validation
 
-Add the following to your model:
+#### 基本使用
 
 ```ruby
 class User < ActiveRecord::Base
   validates :twid, taiwanese_id: true
 end
 ```
+
+#### Options
+
+* `allow_nil` or `allow_blank`
+
+```ruby
+class User < ActiveRecord::Base
+  validates :twid, taiwanese_id: { allow_nil: true }
+end
+```
+
+* Case sensitive, default is true
+
+```ruby
+class User < ActiveRecord::Base
+  validates :twid, taiwanese_id: { case_sensitive: false }
+end
+```
+
 
 ### Validation outside the model
 
