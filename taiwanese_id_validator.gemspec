@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["wayne.5540@gmail.com"]
   spec.summary       = "Taiwanese Id Validator."
   spec.description   = "Taiwanese Id Validator"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/wayne5540/taiwanese_id_validator"
   spec.license       = "MIT"
   spec.files         = `git ls-files`.split("\n")
   spec.test_files    = `git ls-files -- {spec}/*`.split("\n")
