@@ -70,9 +70,15 @@ TwidValidator.valid?('A123456777') #=> false
 
 #### 產生假身分證字號
 
+Generator 是沒有被自動 require 的，所以要使用前要先 require:
+
 ```ruby
+require 'taiwanese_id_validator/twid_generator'
+
 TwidGenerator.generate #=> 隨機產生身分證字號
 ```
+
+可以指定要產生男性或是女性的身分證字號
 
 ```ruby
 TwidGenerator.generate("male") #=> 男性的身分證字號
