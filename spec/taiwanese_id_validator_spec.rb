@@ -8,8 +8,7 @@ describe TaiwaneseIdValidator do
   describe "validation" do
     context "given the valid IDs" do
       [
-        "Y144713411",
-        "y144713411"
+        "Y144713411"
       ].each do |twid|
         it "#{twid} should be valid" do
           expect(TestUser.new(twid: twid)).to be_valid
