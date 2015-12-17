@@ -1,5 +1,9 @@
-require "taiwanese_id_validator/version"
+require "taiwanese_id_validator/twid_validator"
 
-module TaiwaneseIdValidator
-  # Your code goes here...
+class TaiwaneseIdValidator < ActiveModel::EachValidator
+  def validate_each(record, attribute, value)
+    unless TwidValidator.valid?(value)
+      record.errors[attribute] << (options[:message] || "is not an valid ID")
+    end
+  end
 end
