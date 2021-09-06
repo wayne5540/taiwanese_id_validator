@@ -5,7 +5,7 @@ class TaiwaneseIdValidator < ActiveModel::EachValidator
     return if skip_check?
 
     unless TwidValidator.valid?(value, case_sensitive?)
-      record.errors[attribute] << (options[:message] || "is not a valid ID")
+      record.errors.add(attribute, (options[:message] || "is not a valid ID"))
     end
   end
 
