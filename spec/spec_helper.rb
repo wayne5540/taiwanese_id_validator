@@ -6,6 +6,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'taiwanese_id_validator'
+require 'international_id_validator'
 
 class TestModel
   include ActiveModel::Validations
