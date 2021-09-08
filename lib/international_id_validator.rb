@@ -1,11 +1,9 @@
 require "international_id_validator/itid_validator"
-require 'byebug'
 
 class InternationalIdValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
     return if skip_check?
 
-    byebug if value.nil?
     unless ItidValidator.valid?(value, case_sensitive?, allow_old?)
       record.errors.add(attribute, (options[:message] || "is not a valid ID"))
     end

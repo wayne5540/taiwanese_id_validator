@@ -1,5 +1,4 @@
 require 'international_id_validator/itid_mapping'
-require 'byebug'
 
 module ItidValidator
   def self.valid?(itid, case_sensitive = true, allow_old = false)
