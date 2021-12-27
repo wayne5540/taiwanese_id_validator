@@ -8,6 +8,7 @@
 
 * Rails model 內驗證 (Rails 3+/4)
 * Rails model 外驗證
+* 新式統一證號驗證
 * 產生符合格式的身分證字號，可選擇男女
 
 
@@ -88,9 +89,20 @@ TwidGenerator.generate("male") #=> 男性的身分證字號
 TwidGenerator.generate("female") #=> 女性的身分證字號
 ```
 
+#### 驗證統一證號
+
+```ruby
+ItidValidator.valid?('A800000014') #=> true
+```
+
+```ruby
+ItidValidator.valid?('A800000015') #=> false
+```
+
 ## Others
 
-[公式](https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E6%B0%91%E8%BA%AB%E5%88%86%E8%AD%89)
+[身分證公式](https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E6%B0%91%E8%BA%AB%E5%88%86%E8%AD%89)
+[新式統一證號](http://www.registration.fcu.edu.tw/wSite/public/Attachment/f1582594331972.pdf)
 
 
 ## Contributing

@@ -1,10 +1,10 @@
-require "taiwanese_id_validator/twid_validator"
+require "international_id_validator/itid_validator"
 
-class TaiwaneseIdValidator < ActiveModel::EachValidator
+class InternationalIdValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
     return if skip_check?
 
-    unless TwidValidator.valid?(value, case_sensitive?)
+    unless ItidValidator.valid?(value, case_sensitive?, allow_old?)
       record.errors.add(attribute, (options[:message] || "is not a valid ID"))
     end
   end
@@ -17,5 +17,9 @@ class TaiwaneseIdValidator < ActiveModel::EachValidator
 
   def case_sensitive?
     options[:case_sensitive].nil? ? true : options[:case_sensitive]
+  end
+
+  def allow_old?
+    options[:allow_old].nil? ? false : options[:allow_old]
   end
 end

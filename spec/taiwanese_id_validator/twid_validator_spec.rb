@@ -28,8 +28,5 @@ describe TwidValidator do
         expect( TwidValidator.valid?(id) ).to be true
       end
     end
-
-    pending "case sensative"
   end
-
 end
