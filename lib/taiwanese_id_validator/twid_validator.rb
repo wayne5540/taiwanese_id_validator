@@ -2,6 +2,8 @@ require 'taiwanese_id_validator/twid_mapping'
 
 module TwidValidator
   def self.valid?(twid, case_sensitive = true)
+    return false if !twid
+
     twid = twid.upcase unless case_sensitive
 
     return false if twid.length != 10
