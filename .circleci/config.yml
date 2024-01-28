@@ -1,0 +1,21 @@
+# This config was automatically generated from your source code
+# Stacks detected: deps:ruby:.,package_manager:gemspec:.
+version: 2.1
+orbs:
+  ruby: circleci/ruby@2.0.1
+jobs:
+  test-ruby:
+    # Install gems, run rake tests
+    docker:
+      - image: cimg/ruby:3.2-node
+    steps:
+      - checkout
+      - run:
+          command: bundle install
+      - run:
+          name: rspec
+          command: bundle exec rspec
+workflows:
+  build-and-test:
+    jobs:
+      - test-ruby
