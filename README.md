@@ -1,6 +1,6 @@
 # Taiwanese Id Validator for Ruby on Rails
 
-[![Build Status](https://travis-ci.org/wayne5540/taiwanese_id_validator.svg?branch=master)](https://travis-ci.org/wayne5540/taiwanese_id_validator)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/FKggdQG5AgDP3LBkgKzJhV/BSJFR96G6aQahEHaZPYKJ7/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/circleci/FKggdQG5AgDP3LBkgKzJhV/BSJFR96G6aQahEHaZPYKJ7/tree/master)
 
 台灣身分證字號 驗證&產生 的 Gem
 
