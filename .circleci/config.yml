@@ -13,8 +13,8 @@ jobs:
       - run:
           command: bundle install
       - run:
-          name: rake test
-          command: bundle exec rake test
+          name: rspec
+          command: bundle exec rspec
   deploy:
     # This is an example deploy job, not actually used by the workflow
     docker:
@@ -23,7 +23,7 @@ jobs:
       # Replace this with steps to deploy to users
       - run:
           name: deploy
-          command: '#e.g. ./deploy.sh'
+          command: "#e.g. ./deploy.sh"
 workflows:
   build-and-test:
     jobs:
