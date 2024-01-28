@@ -1,6 +1,6 @@
 # Taiwanese Id Validator for Ruby on Rails
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/FKggdQG5AgDP3LBkgKzJhV/BSJFR96G6aQahEHaZPYKJ7/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/circleci/FKggdQG5AgDP3LBkgKzJhV/BSJFR96G6aQahEHaZPYKJ7/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/FKggdQG5AgDP3LBkgKzJhV/BSJFR96G6aQahEHaZPYKJ7/tree/master.svg?style=shield&circle-token=c36b30c7da54c1a80dfea3985a5f1b06b8db37e6)](https://dl.circleci.com/status-badge/redirect/circleci/FKggdQG5AgDP3LBkgKzJhV/BSJFR96G6aQahEHaZPYKJ7/tree/master)
 
 台灣身分證字號 驗證&產生 的 Gem
 
