@@ -6,7 +6,7 @@
 
 ## Features
 
-- Rails model 內驗證 (Rails 3+/4)
+- Rails model 內驗證 (Rails 3+/4/5/6/7)
 - Rails model 外驗證
 - 新式統一證號驗證
 - 產生符合格式的身分證字號，可選擇男女
