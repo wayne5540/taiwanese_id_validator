@@ -23,6 +23,10 @@ describe TwidValidator do
       it "returns false if id is nil" do
         expect( TwidValidator.valid?(nil) ).to be false
       end
+
+      it "returns false if id is nil" do
+        expect( TwidValidator.valid?(1) ).to be false
+      end
     end
 
     context "when id is valid" do
