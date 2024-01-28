@@ -21,7 +21,13 @@ gem build taiwanese_id_validator.gemspec
 Install the gem, change the version name if needed
 
 ```
-gem install ./taiwanese_id_validator-0.0.2.gem
+gem install ./taiwanese_id_validator-0.0.3.gem
+```
+
+Push to RubyGem
+
+```
+gem push ./taiwanese_id_validator-0.0.3.gem
 ```
 
 More details about how to make the gem including build, install, push can be found [here](https://guides.rubygems.org/make-your-own-gem/)
