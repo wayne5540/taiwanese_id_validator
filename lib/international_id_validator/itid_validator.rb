@@ -2,6 +2,9 @@ require 'international_id_validator/itid_mapping'
 
 module ItidValidator
   def self.valid?(itid, case_sensitive = true, allow_old = false)
+    return false if !itid
+    return false if !itid.is_a?(String)
+
     itid = itid.upcase unless case_sensitive
 
     return false if itid.length != 10

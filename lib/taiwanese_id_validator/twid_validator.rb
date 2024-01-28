@@ -3,6 +3,7 @@ require 'taiwanese_id_validator/twid_mapping'
 module TwidValidator
   def self.valid?(twid, case_sensitive = true)
     return false if !twid
+    return false if !twid.is_a?(String)
 
     twid = twid.upcase unless case_sensitive
 

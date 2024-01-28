@@ -6,11 +6,10 @@
 
 ## Features
 
-* Rails model 內驗證 (Rails 3+/4)
-* Rails model 外驗證
-* 新式統一證號驗證
-* 產生符合格式的身分證字號，可選擇男女
-
+- Rails model 內驗證 (Rails 3+/4/5/6/7)
+- Rails model 外驗證
+- 新式統一證號驗證
+- 產生符合格式的身分證字號，可選擇男女
 
 ## Installation
 
@@ -40,7 +39,7 @@ end
 
 #### Options
 
-* `allow_nil` or `allow_blank`
+- `allow_nil` or `allow_blank`
 
 ```ruby
 class User < ActiveRecord::Base
@@ -48,14 +47,13 @@ class User < ActiveRecord::Base
 end
 ```
 
-* Case sensitive, default is true
+- Case sensitive, default is true
 
 ```ruby
 class User < ActiveRecord::Base
   validates :twid, taiwanese_id: { case_sensitive: false }
 end
 ```
-
 
 ### Validation outside the model
 
@@ -104,15 +102,9 @@ ItidValidator.valid?('A800000015') #=> false
 - [身分證公式](https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E6%B0%91%E8%BA%AB%E5%88%86%E8%AD%89)
 - [新式統一證號](https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%B1%85%E7%95%99%E8%AD%89)
 
-
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/taiwanese_id_validator/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
+Check [DEVELOPMENT.md](DEVELOPMENT.md)
 
 ## LICENSE
 

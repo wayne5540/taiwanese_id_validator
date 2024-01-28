@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "taiwanese_id_validator"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.authors       = ["Wayne Chu"]
   spec.email         = ["wayne.5540@gmail.com"]
   spec.summary       = "Taiwanese Id Validator."
