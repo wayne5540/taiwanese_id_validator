@@ -8,7 +8,13 @@ describe TwidGenerator do
         TwidValidator.valid?(TwidGenerator.generate)
       end
 
-      expect(fake_ids.all?{true}).to be true
+      expect(fake_ids).to all(be true)
+    end
+
+    it "always generates a 10-character ID" do
+      lengths = 1000.times.map { TwidGenerator.generate.length }
+
+      expect(lengths).to all(eq(10))
     end
 
     describe "is able to fake male or female ID" do

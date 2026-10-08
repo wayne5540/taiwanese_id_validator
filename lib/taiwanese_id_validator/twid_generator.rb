@@ -40,7 +40,7 @@ module TwidGenerator
       sum += last_letter
       twid += last_letter.to_s
     elsif sum % 10 == 9
-      last_two_letter = Random.rand(2..10)
+      last_two_letter = Random.rand(2..9)
       sum += last_two_letter
       twid += last_two_letter.to_s
 
