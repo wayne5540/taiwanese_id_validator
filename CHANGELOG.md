@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Fix `TwidGenerator.generate` occasionally producing an 11-character ID
+  instead of the standard 10 characters, caused by an off-by-one in the
+  `sum % 10 == 9` checksum branch
+
 ## V0.0.3
 
 - Fix `TwidValidator.valid?(nil)` raise Error problem [PR#3](https://github.com/wayne5540/taiwanese_id_validator/pull/3)
